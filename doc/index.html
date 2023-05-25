@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <title>
+    Daniel Knüppe
+  </title>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <main>
+      <section class="quick-info">
+        <div class="avatar">
+          <img src="avatar.jpg" alt="image of myself">
+          <div class="name">
+            <h2>Daniel Knüppe</h2>
+          </div>
+        </div>
+        <div class="contact-address">
+          <li><i class="fa fa-phone"></i> <script language="JavaScript">a = 157; b = 5555; c = 7900; document.write('0' + a + ' ' + b + ' ' + c);</script> </li>
+          <li><i class="fa fa-envelope"></i> <script language="JavaScript">user = 'daniel.knueppe';site = 'googlemail.com';document.write('<a href=\"mailto:' + user + '@' + site + '\">');document.write(user + '@' + site + '</a>');</script></li>
+          <li><i class="fa fa-map-marker"></i> 48565 Steinfurt</li>
+          <li><i class="fa-brands fa-github"></i> <a href="https://github.com/dknueppe"> github.com/dknueppe </a></li>
+          <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/daniel-kn%C3%BCppe-190253108">LinkedIn</a></li>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2><i class="fa fa-cog"></i> Fähigkeiten</h2>
+          <h3>Entwurf elektrischer Schaltungen</h3>
+          <p>CAD-Programme: KiCad, Altium, Target3001</p>
+          <p>Prototypen Entwicklung</p>
+          <p>Optimierung für Serienproduktion</p>
+          <h3>Programmieren</h3>
+          <p>Sprachen: C/C++, Python</p>
+          <p>Versionsverwaltung: Git</p>
+          <p>Automation mit CI/CD pipelines in gitlab</p>
+          <h3>Montage und Wartung von Mechatronischen Systemen</h3>
+          <p>Elektrische Anlagen</p>
+          <p>Hydraulik, Pneumatik</p>
+          <h3>Sprachkentnisse</h3>
+          <p>Deutsch, Muttersprachler</p>
+          <p>Englisch, kompetent in Wort und Schrift</p>
+        </div>
+      </section>
+      <section class="ed-work">
+        <h1> Daniel Knüppe </h1>
+        <div class="education">
+        <h2><i class="fa fa-university"></i> Bildung</h2>
+          <div class="timeline">
+            <div class="years"> 2015 - 2021 </div>
+            <div> 
+              <h3> Fachhochschule Münster </h3>
+              Studium zum Bachelor of Science Elektrotechnik ohne Abschluss.
+              Vertiefungsrichtung: Embedded Engineering
+            </div>
+            <div class="years"> 2012 - 2015 </div>
+            <div>
+              <h3> Teupen Maschinenbau GmBH </h3>
+              Ausbildung zum Mechatroniker
+            </div>
+            <div class="years"> 2009 - 2012 </div>
+            <div>
+              <h3> Hans-Böckler Berufskolleg </h3>
+              Erwerb der allgemeinen Hochschulreife
+            </div>
+          </div>
+        </div>
+        <div class="work-xp">
+        <h2><i class="fa fa-hammer"></i> Berufserfahrung </h2>
+          <div class="timeline">
+            <div class="years"> 2020 - 2022 </div>
+            <div>
+              <h3> Friwo Gerätebau GmBH </h3>
+              Werkstudent in der Abteilung E-Mobility zur Unterstützung des Entwicklerteams beim Anpassen einer bestehenden Motorsteuerung an neue Marktanforderungen.
+            </div>
+            <div class="years"> 2018 - 2020 </div>
+            <div>
+              <h3> Labor für Nachrichtentechnik an der FH Münster </h3>
+              Fallstudie für den Einsatz von Highlevel Synthesis Methoden zur Konfiguration von FPGAs mit OpenCL via C++. Entwicklung einer Softwareinfrastruktur zur Erhebung von Messdaten mittels RaspberryPi. Anpassungen der Hard- und Software des Demonstrationsobjekt 'DSPMate' für eine Kleinserienproduktion.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <style>
+
+:root {
+  --ft-color: #212121;
+  --ft-accent-color: cyan;
+  --section-color: #d3e3f3;
+}
+body {
+  margin: auto;
+  width: 21cm;
+  height: 29.7cm;
+  border: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e2e2e2;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+i {
+  color: #f32323;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 40ch 70ch;
+  gap: 1rem;
+  margin: 0.6rem;
+  filter: drop-shadow(0 0 0.4rem black)
+}
+
+main section {
+  color: var(--ft-color);
+}
+
+.avatar {
+  position:relative;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.avatar h2{
+  position: absolute;
+  bottom: 0;
+  padding-left: 1rem;
+  padding-right: 0.2rem;
+  margin-bottom: 0.4rem;
+  color: white;
+  background-color: rgba(100, 110, 190, 0.2);
+  filter: drop-shadow(0 0 1rem black)
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 16ch 1fr;
+  grid-template-rows: auto auto;
+}
+
+.timeline h3 {
+  margin-top: 0;
+  margin-bottom: 0.1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timeline div {
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
+
+.ed-work h2{
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.ed-work h1{
+  padding-top: 1.5rem;
+  padding-left: 15rem;
+}
+
+.ed-work {
+  padding-top: 1rem;
+  padding-right: 1.5em;
+  background-color: #fff;
+}
+
+.quick-info {
+  background-color: white;
+}
+
+.years {
+  margin-top: 0em;
+  margin-right: 1em;
+  margin-left: 0;
+  text-align: right;
+  font-family: 'Roboto-mono', monospace;
+}
+
+.contact-address, .skills {
+  padding: 1em;
+}
+
+hr{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.skills {
+  padding-top: 0;
+}
+
+.skills {
+  width: 45ch;
+}
+
+  </style>
+</html>
+
