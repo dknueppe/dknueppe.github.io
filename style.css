@@ -1,0 +1,151 @@
+:root {
+  --ft-color: #212121;
+  --ft-accent-color: #f32323;
+  --section-color: #d3e3f3;
+  --main-margin: 3mm;
+  --main-gap: var(--main-margin);
+  --quick-info-width: 78mm;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ft-color);
+  background-color: #e2e2e2;
+  margin: auto;
+  margin-top: 0;
+  height: 297mm;
+  width: 210mm;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--main-margin);
+  gap: var(--main-gap);
+  filter: drop-shadow(0 0 0.2rem black);
+}
+
+.quick-info {
+  max-width: var(--quick-info-width);
+}
+
+.contact-address {
+  padding: 1em;
+}
+
+.skills {
+  padding: 1em;
+}
+
+.ed-work {
+  max-width: calc(210mm - var(--quick-info-width) - 2 * var(--main-margin) - var(--main-gap));
+}
+
+section {
+  background-color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+i {
+  color: var(--ft-accent-color);
+  width: 2em;
+  text-align: center;
+}
+
+table {
+  padding: 1em;
+}
+
+td {
+  padding: 0.3em;
+}
+
+.education {
+  margin-bottom: 1rem;
+}
+
+.years {
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: 1em;
+}
+
+.vert-line {
+  background-color: red;
+  width: 0.1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.4em;
+  border: 0;
+}
+
+.contact-address i {
+  width: 1.2em;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.avatar {
+  position:relative;
+  padding: 0;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+h1 {
+  margin: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 32px;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.ed-work h1{
+  text-align: center;
+}
+
+.ed-work h2{
+  padding: 0.8rem;
+}
+
+.about-me h2 {
+  padding: 0.8rem;
+}
+
+.ed-work h3 {
+  margin-top: 0;
+}
+
+.years {
+  text-align: right;
+  font-family: 'Roboto-mono', monospace;
+}
+
+.about-me {
+  padding: 1em;
+  padding-top: 0.7em;
+}
+
