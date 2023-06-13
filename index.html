@@ -12,20 +12,18 @@
   <body>
     <main>
       <section class="quick-info">
-        <div class="avatar">
-          <img src="./Avatar.jpg" alt="image of myself">
-        </div>
+          <img class="avatar" src="./Avatar.jpg" alt="image of myself">
         <div class="contact-address">
-          <li><i class="fa fa-phone"></i> <script language="JavaScript">a = 57; b = 5555; c = 7900; document.write('01' + a + ' ' + b + ' ' + c);</script></li>
-          <li><i class="fa fa-envelope"></i> <script language="JavaScript">user = 'daniel.knueppe';site = 'googlemail.com';document.write('<a href=\"mailto:' + user + '@' + site + '\">');document.write(user + '@' + site + '</a>');</script></li>
-          <li><i class="fa fa-map-marker"></i> 48565 Steinfurt</li>
-          <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/daniel-kn%C3%BCppe-190253108">LinkedIn</a></li>
-          <li><i class="fa-brands fa-github"></i> <a href="https://github.com/dknueppe"> github.com/dknueppe </a></li>
+          <li id="phone"><script language="JavaScript">a = 57; b = 5555; c = 7900; document.write('01' + a + ' ' + b + ' ' + c);</script></li>
+          <li id="mail"><script language="JavaScript">user = 'daniel.knueppe';site = 'googlemail.com';document.write('<a href=\"mailto:' + user + '@' + site + '\">');document.write(user + '@' + site + '</a>');</script></li>
+          <li id="address">48565 Steinfurt</li>
+          <li id="linked-in"><a href="https://www.linkedin.com/in/daniel-kn%C3%BCppe-190253108">LinkedIn</a></li>
+          <li id="github"><a href="https://github.com/dknueppe">github.com/dknueppe </a></li>
         </div>
         <hr>
 
         <div class="skills">
-          <h2><i class="fa fa-cog"></i>Fähigkeiten</h2>
+          <h2 id="skills-heading">Fähigkeiten</h2>
 
           <h3>Hardware Entwurf</h3>
           <li>CAD-Programme: KiCad, Altium</li>
@@ -53,18 +51,18 @@
         <h1> Daniel Knüppe </h1>
 
         <section class="education">
-          <h2><i class="fa fa-university"></i> Bildung</h2>
+          <h2 id="education-heading"> Bildung</h2>
 
           <table class="timeline">
 
             <tr>
               <td class="years">
                 <p> 2022 </p>
-                <hr style="height:16mm;" class="vert-line">
+                <hr id="the-odd-one" style="height:3.6em;" class="vert-line">
               </td>
               <td>
                 <h3> Fachhochschule Münster </h3>
-                Studium zum Bachelor of Science Elektrotechnik ohne Abschluss<br>
+                Studium zum Bachelor of Science Elektrotechnik<br>ohne Abschluss<br>
                 Vertiefungsrichtung: Embedded Engineering
               </td>
             </tr>
@@ -72,7 +70,7 @@
             <tr>
               <td class="years">
                 <p> 2015 </p>
-                <hr style="height:6.4mm;" class="vert-line">
+                <hr style="height:1.5em;" class="vert-line">
               </td>
               <td>
                 <h3> Teupen Maschinenbau GmbH </h3>
@@ -83,7 +81,7 @@
             <tr>
               <td class="years">
                 <p> 2012 </p>
-                <hr style="height:6.4mm;" class="vert-line">
+                <hr style="height:1.5em;" class="vert-line">
               </td>
               <td>
                 <h3> Hans-Böckler Berufskolleg </h3>
@@ -95,12 +93,12 @@
         </section>
 
         <section class="work-xp">
-          <h2><i class="fa fa-hammer"></i> Berufserfahrung </h2>
+          <h2 id="work-xp-heading"> Berufserfahrung </h2>
           <table class="timeline">
             <tr>
               <td class="years">
                 <p> 2022 </p>
-                <hr style="height:20.3mm;" class="vert-line">
+                <hr style="height:4.7em;" class="vert-line">
               </td>
               <td>
                 <h3> Friwo Gerätebau GmbH </h3>
@@ -111,7 +109,7 @@
             <tr>
               <td class="years">
                 <p> 2020 </p>
-                <hr style="height:41.5mm;margin-bottom:0.4em;"class="vert-line">
+                <hr id="start-timeline" style="height:7.95em;margin-bottom:0.4em;"class="vert-line">
                 <p> 2018 </p>
               </td>
               <td>
@@ -125,8 +123,9 @@
           </table>
         </section>
       </section>
+
       <section class="about-me">
-        <h2><i class="fa fa-user"></i>Über mich</h2>
+        <h2>Über mich</h2>
         <p>
         Durch meinen Werdegang habe ich Elektrizität schon in vielen Einsatzgebieten gesehen.
         In der Anlagentechnik in Schaltschränken, zum Steuern von Maschinen, als treibende Kraft
@@ -139,6 +138,7 @@
         finde ich besonders interessant.
         </p>
       </section>
+
     </main>
   </body>
 </html>
